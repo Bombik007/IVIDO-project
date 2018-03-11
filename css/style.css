@@ -20,6 +20,15 @@ body {
     margin-bottom: 0.25rem;
 }
 
+.upper-nav div {
+    display: flex;
+    flex-direction: row;
+}
+
+.upper-nav div img {
+    padding-right: 15px;
+}
+
 nav {
     padding: 5px 0;
 }
@@ -34,6 +43,7 @@ ul {
 
 ul a {
     color: #9c9c92;
+    font-weight: 600;
 }
 
 ul a:hover {
@@ -61,8 +71,8 @@ h2 {
     color: #9c9c92;
 }
 
-.contacts h2 {
-    color: white;
+a:hover {
+    text-decoration: none;
 }
 
 header {
@@ -95,7 +105,7 @@ header {
     -webkit-box-shadow: 0px 1px 22px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 22px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 22px 0px rgba(0,0,0,0.75);
-    height: 550px;
+    height: 560px;
     border-radius: 15px; 
     background-color: white;
 }
@@ -135,8 +145,22 @@ table, th, td {
     border-collapse: collapse;
 }
 
-table {
+.table-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.THElist {
     margin: 0 auto;
+    max-width: 1300px;
+}
+
+.price-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 }
 
 footer {
@@ -166,12 +190,22 @@ footer h2 {
 }
 
 .vl {
-    margin-left: 3%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border-left: 5px solid white;
 }
 
 .contacts:not(:nth-child(5)){
     font-weight: 600;
+}
+
+.contacts h2 {
+    color: white;
+}
+
+.contacts {
+    padding-left: 10px;
+    padding-top: 4vw;
 }
 
 .e-mail {
@@ -186,6 +220,13 @@ footer h2 {
 footer .flex-container {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.flex-container>img {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .fa-caret-right, 

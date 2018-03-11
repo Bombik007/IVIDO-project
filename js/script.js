@@ -31,16 +31,11 @@ $(document).ready(function(){
         nextArrow: '<i class="fa fa-caret-right"></i>',
         prevArrow: '<i class="fa fa-caret-left"></i>',
       });
+
+      $("#navigation").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $("body, html").animate({scrollTop: top}, 1500);
+      });
   });
-
-
-  
-
-function myMap() {
-    var mapOptions = {
-        center: {lat: 18.638, lng: -54.372},
-        zoom: 10,
-        mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-    map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}

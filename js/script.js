@@ -27,9 +27,12 @@ $(document).ready(function(){
     $('.multiple-items').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextArrow: '<i class="fa fa-caret-right"></i>',
+        prevArrow: '<i class="fa fa-caret-left"></i>',
       });
   });
+
 
   
 

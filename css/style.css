@@ -242,3 +242,26 @@ footer .flex-container {
 .fa-caret-right {
     color: #9c9c92;
 }
+
+@media screen and (max-width: 1325px) {
+    .price-table {
+        margin: 0 auto; 
+    }
+
+    .slide {
+        height: 600px;
+    }
+
+    .img-container {
+        height: 180px;
+    }
+
+    .slide {
+        padding: 15px 18px;
+    }
+
+    h1 {
+        background: none;
+        -webkit-text-fill-color: white;
+    }
+}

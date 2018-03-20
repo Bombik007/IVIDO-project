@@ -7,48 +7,31 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5
-    384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.css">
     <title>IVIDO Advertising</title>
 </head>
 <body>
     <main class="container-fluid">
-        <div class="upper-nav row">
-            <div class="col-md-2 offset-md-6">
-                <!-- <img src="img/letter_icon.png" alt="message icon"> -->
-                <a href="#contacts">contact an advisor</a>
-            </div>
-            <div class="col-md-2">
-                <img src="img/call_icon.png" alt="phone number">
-                <p>+480 512 12 32</p>
-            </div>
-            <div class="col-md-2">
-                <a href="#"><img src="img/gb_icon.png" alt="eng"></a>
-                <a href="#"><img src="img/pl_icon.png" alt="pl"></a>
-            </div>
-        </div>
         <nav class="row">
             <div class="col-md-2 offset-md-1">
                 <img src="img/main-logo1.jpg" alt="Main logo">
             </div>
             
             <ul class="row col-md-6 offset-md-3" id="navigation">
-                <li class="col-md-4"><a href="#offers">OFFERS</a></li>
-                <li class="col-md-4"><a href="#price-list">CENNIK</a></li>
-                <li class="col-md-4"><a href="#contacts">KONTAKT</a></li>
+                <li class="col-md-3"><a href="#offers">OFERTA</a></li>
+                <li class="col-md-3"><a href="#price-list">CENNIK</a></li>
+                <li class="col-md-3"><a href="#contacts">KONTAKT</a></li>
+                <li class="col-md-3"><img src="img/pl_icon.png" alt="pl"></li>
             </ul>
         </nav>
     </main>
     <header>
-        <h1>The IVIDO advertising offers YOU <br> the best distribution of advertising</h1>
     </header>
     <section id="offers">
         <div class="first-slider multiple-items multiple-items _clearfix">
             <div class="slide">
                 <div class="img-container">
-                    <img src="img/2.JPEG" alt="ad1">
+                    <img src="img/telebim.jpg" alt="ad1">
                 </div>
                 <p>Reklama na telebimie</p>
                 <p>Innowacyjność jest cechą ambitnych, kreatywnych i silnych 
@@ -89,16 +72,16 @@
                     osoby odpowiedzialne za tworzenie grafik dla Naszych zleceniobiorców.</p>
             </div>
             <div class="slide">
-                <div class="img-container">
-                    <img src="img/1.JPEG" alt="ad1">
+                <div class="img-container custom-padding">
+                    <img src="img/ulotek.jpg" alt="ad1">
                 </div>
                 <p>Projektowanie ulotek</p>
                 <p> Zespół Naszych wykwalifikowanych grafików zaprojektuje ulotki od 
                     podstaw lub zmodernizuje wersję obecną i dopasuje do Państwa potrzeb.</p>
             </div>
             <div class="slide">
-                <div class="img-container">
-                    <img src="img/3.JPEG" alt="ad1">
+                <div class="img-container custom-padding">
+                    <img src="img/gadzety.jpg" alt="ad1">
                 </div>
                 <p>Gadżety</p>
                 <p> Gadżety przypominają klientom o danej marce w codziennym życiu. 
@@ -118,7 +101,7 @@
     </section>
     <section class="price-list container-fluid" id="price-list">
         <div class="THElist">
-            <h2>Cennik</h2>
+            <h2>Cennik reklamy na telebimie</h2>
             <div class="table-block">
                 <div class="price-table">
                     <h3>1 miesiąc</h3>
@@ -365,19 +348,34 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                <h2>Wymiary oraz informacje dotyczące ekranu </h2>
+                <p>Wielkość ekranu 20m2<br>
+                    Rozmiar pixeli 20mm <br>
+                    Virtual 10mm <br>
+                    Rozdzielczość 512x384 <br>
+                    Proporcje obrazu ¾ <br>
+                    Preferowane formaty pliku: .jpg; .png; .wmv; .swf</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/img/2.JPEG" alt="2" class="placeholder-image">
+            </div>
+        </div>  
+    </div>
     <footer class="container-fluid">
-        <div class="flex-container">
-            <img src="img/map.png" alt="mapa">
-            <div class="vl">
-                <div class="contacts" id="contacts">
-                    <h2>Kontakt</h2>
-                    <p>Gdansk</p>
-                    <p>+48 794 297 038</p>
-                    <p class="e-mail">kontakt@ivido.com</p>
-                    <div class="fb-footer">
-                        <h3>Find Us on the </h3>
-                        <a href="#"><img src="img/fb-footer.png" alt="fb-icon"></a>
-                    </div>
+        <div class="row">
+            <div class="col-md-7 offset-md-1">
+                <img src="img/map.png" alt="mapa" class="py-3">
+            </div>
+            <div class="col-md-3" id="contacts">
+                <h2 class="mt-5">Kontakt</h2>
+                <p>+48 794 297 038</p>
+                <p class="e-mail">kontakt@ivido.com</p>
+                <div class="fb-footer">
+                    <h3>Znajdź nas na </h3>
+                    <a href="#"><img src="img/fb-footer.png" alt="fb-icon"></a>
                 </div>
             </div>
         </div>
@@ -387,7 +385,6 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5pqy1sTSwWfMgvGSq7ncAhvEYPpGtKXA&callback=myMap"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>

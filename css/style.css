@@ -55,18 +55,6 @@ li {
     list-style-type: none;
 }
 
-h1 {
-    text-align: center;
-    padding: 13% 25%;
-    margin-bottom: 0;
-    font-family: 'Calibri Regular', serif;
-    font-size: 3.5vw;
-    font-weight: 900;
-    background: -webkit-linear-gradient(#eee, rgb(39, 39, 39));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 h2 {
     color: #9c9c92;
 }
@@ -76,14 +64,8 @@ a:hover {
 }
 
 header {
-    background: rgba(156,156,146,1);
-    background: -moz-linear-gradient(-45deg, rgba(156,156,146,1) 0%, rgba(156,156,146,1) 16%, rgba(178,178,170,1) 31%, rgba(179,179,172,1) 32%, rgba(193,193,187,1) 43%, rgba(214,214,211,1) 55%, rgba(255,255,255,1) 84%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(156,156,146,1)), color-stop(16%, rgba(156,156,146,1)), color-stop(31%, rgba(178,178,170,1)), color-stop(32%, rgba(179,179,172,1)), color-stop(43%, rgba(193,193,187,1)), color-stop(55%, rgba(214,214,211,1)), color-stop(84%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(156,156,146,1) 0%, rgba(156,156,146,1) 16%, rgba(178,178,170,1) 31%, rgba(179,179,172,1) 32%, rgba(193,193,187,1) 43%, rgba(214,214,211,1) 55%, rgba(255,255,255,1) 84%);
-    background: -o-linear-gradient(-45deg, rgba(156,156,146,1) 0%, rgba(156,156,146,1) 16%, rgba(178,178,170,1) 31%, rgba(179,179,172,1) 32%, rgba(193,193,187,1) 43%, rgba(214,214,211,1) 55%, rgba(255,255,255,1) 84%);
-    background: -ms-linear-gradient(-45deg, rgba(156,156,146,1) 0%, rgba(156,156,146,1) 16%, rgba(178,178,170,1) 31%, rgba(179,179,172,1) 32%, rgba(193,193,187,1) 43%, rgba(214,214,211,1) 55%, rgba(255,255,255,1) 84%);
-    background: linear-gradient(135deg, rgba(156,156,146,1) 0%, rgba(156,156,146,1) 16%, rgba(178,178,170,1) 31%, rgba(179,179,172,1) 32%, rgba(193,193,187,1) 43%, rgba(214,214,211,1) 55%, rgba(255,255,255,1) 84%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c9c92', endColorstr='#ffffff', GradientType=1 );
+    background-image: url("../img/1.JPEG");
+    background-size: cover;
     height: 51vw;
 }
 
@@ -110,13 +92,25 @@ header {
     background-color: white;
 }
 
+.slide p:first-child {
+    font-size: 1.05vw;
+}
+
 .slide p:last-child {
-    font-size: 14px;
+    font-size: 0.95vw;
+}
+
+.custom-padding {
+    padding-bottom: 1.2vw;
+}
+
+.custom-padding2 {
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
 }
 
 .img-container {
     max-width: 280px;
-    height: 200px;
     margin: 0 auto;
 }
 
@@ -127,6 +121,7 @@ header {
 
 .img-container ~ p {
     font-weight: 600;
+    font-size: 1.05vw;
 }
 
 .price-list {
@@ -189,44 +184,20 @@ footer h2 {
     padding-left: 15px;
 }
 
-.vl {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-left: 5px solid white;
-}
-
 .contacts:not(:nth-child(5)){
     font-weight: 600;
 }
 
-.contacts h2 {
+#contacts h2 {
     color: white;
 }
 
-.contacts {
-    padding-left: 10px;
-    padding-top: 4vw;
+#contacts p {
+    font-size: 20px;
 }
 
 .e-mail {
     font-weight: 400;
-}
-
-#map {
-    margin-top: 4.5%;
-    margin-bottom: 3%;
-}
-
-footer .flex-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    justify-content: space-evenly;
-}
-
-.flex-container>img {
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 .fa-caret-right, 
@@ -235,12 +206,13 @@ footer .flex-container {
     padding-top: 12%;
 }
 
-.fa-caret-left {
+.fa-caret-left,
+.fa-caret-right {
     color: white;
 }
 
-.fa-caret-right {
-    color: #9c9c92;
+.placeholder-image {
+    width: 65%;
 }
 
 @media screen and (max-width: 1325px) {
@@ -252,16 +224,7 @@ footer .flex-container {
         height: 600px;
     }
 
-    .img-container {
-        height: 180px;
-    }
-
     .slide {
         padding: 15px 18px;
-    }
-
-    h1 {
-        background: none;
-        -webkit-text-fill-color: white;
     }
 }
